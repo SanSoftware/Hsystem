@@ -16,7 +16,6 @@ public partial class Rentlist : System.Web.UI.Page
             RUDT = RUAdapter.Select_Rent_for_USER();
             GridView1.DataSource = RUDT;
             GridView1.DataBind();
-            lblsname.Text = "Total Rent Record - " + GridView1.Rows.Count.ToString();          
         }
     }
     protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)

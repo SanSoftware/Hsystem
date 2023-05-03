@@ -20,7 +20,6 @@ public partial class Search : System.Web.UI.Page
     {
         if (Page.IsPostBack == false)
         {
-            SDT = SAdapter.SelectTOP10();
             DropDownList1.DataSource = SDT;
             DropDownList1.DataTextField = "Sname";
             DropDownList1.DataValueField = "sid";
