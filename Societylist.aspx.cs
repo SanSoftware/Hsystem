@@ -16,7 +16,6 @@ public partial class Societylist : System.Web.UI.Page
             HDT = HAdapter.Select_BY_SNAME(Session["sname"].ToString());
             GridView1.DataSource = HDT;
             GridView1.DataBind();
-            lblsname.Text = Session["sname"].ToString() + " - " + GridView1.Rows.Count;
         }
     }
 }
