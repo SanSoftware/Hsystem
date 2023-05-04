@@ -16,7 +16,6 @@ public partial class Complain : System.Web.UI.Page
     }
     protected void btnmakecomplin_Click(object sender, EventArgs e)
     {
-        CAdapter.Insert(Convert.ToInt32(Session["uid"].ToString()), txtsubject.Text, txtcomplain.Text, "");
         lblmcomplain.Text = "Compain send successfully";
         txtcomplain.Text = "";
         txtsubject.Text = "";
